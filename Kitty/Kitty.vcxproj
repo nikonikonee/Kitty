@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1b1743df-2fa4-4a72-a9ba-141bf48a0599}</ProjectGuid>
+    <RootNamespace>Kitty</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <VcpkgUseStatic>true</VcpkgUseStatic>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;KITTY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;KITTY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;KITTY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;KITTY_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdclatest</LanguageStandard_C>
+      <AdditionalIncludeDirectories>$(ProjectDir)/Dependencies/ImGui;$(ProjectDir)/Dependencies/ImGui/backends;$(ProjectDir)/Dependencies;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AimbotUtils.cpp" />
+    <ClCompile Include="API.cpp" />
+    <ClCompile Include="AssetBundle.cpp" />
+    <ClCompile Include="AvatarItemWardrobeRuntimeConfig.cpp" />
+    <ClCompile Include="Blacklisted.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Cheat.cpp" />
+    <ClCompile Include="Cheats.cpp" />
+    <ClCompile Include="CheatUtils.cpp" />
+    <ClCompile Include="Combat.cpp" />
+    <ClCompile Include="Combat_Aimbot.cpp" />
+    <ClCompile Include="Combat_HvH.cpp" />
+    <ClCompile Include="Combat_SilentAimbot.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="ConsumableCollectionRuntimeConfig.cpp" />
+    <ClCompile Include="Dependencies\ImGui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Dependencies\ImGui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Dependencies\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Dependencies\kiero\kiero.cpp" />
+    <ClCompile Include="Dependencies\Memory\Memory.cpp" />
+    <ClCompile Include="Dictionary.cpp" />
+    <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="DrawingSurface.cpp" />
+    <ClCompile Include="EquipmentInfo.cpp" />
+    <ClCompile Include="ESP.cpp" />
+    <ClCompile Include="Exports.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Hashtable.cpp" />
+    <ClCompile Include="Headers.cpp" />
+    <ClCompile Include="Headers_Aimbot.cpp" />
+    <ClCompile Include="Headers_API.cpp" />
+    <ClCompile Include="Headers_Combat.cpp" />
+    <ClCompile Include="Headers_GUI.cpp" />
+    <ClCompile Include="Headers_Misc.cpp" />
+    <ClCompile Include="Headers_Network.cpp" />
+    <ClCompile Include="Headers_Spawnables.cpp" />
+    <ClCompile Include="Headers_Unity.cpp" />
+    <ClCompile Include="Headers_Visuals.cpp" />
+    <ClCompile Include="Headers_VRVisuals.cpp" />
+    <ClCompile Include="Il2CppDomain.cpp" />
+    <ClCompile Include="ImageConversion.cpp" />
+    <ClCompile Include="LineRenderer.cpp" />
+    <ClCompile Include="Managers_Network.cpp" />
+    <ClCompile Include="Managers_Visuals.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Mods_Basic.cpp" />
+    <ClCompile Include="Mods_Game.cpp" />
+    <ClCompile Include="GameCombatManager.cpp" />
+    <ClCompile Include="GameTeamManager.cpp" />
+    <ClCompile Include="GUI.cpp" />
+    <ClCompile Include="GUIBase.cpp" />
+    <ClCompile Include="Hook.cpp" />
+    <ClCompile Include="Il2CppClass.cpp" />
+    <ClCompile Include="Il2CppMethod.cpp" />
+    <ClCompile Include="Il2CppObject.cpp" />
+    <ClCompile Include="Il2CppType.cpp" />
+    <ClCompile Include="Managers_PlayerList.cpp" />
+    <ClCompile Include="Mods_Lobby.cpp" />
+    <ClCompile Include="PlayerHand.cpp" />
+    <ClCompile Include="PlayerHead.cpp" />
+    <ClCompile Include="Mods_RPC.cpp" />
+    <ClCompile Include="PlayerNameTag.cpp" />
+    <ClCompile Include="RecRoomSceneManager.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RRNetworking.cpp" />
+    <ClCompile Include="LocalPlayerController.cpp" />
+    <ClCompile Include="Managers_Lobby.cpp" />
+    <ClCompile Include="PlayerAvatar.cpp" />
+    <ClCompile Include="PointerUtils.cpp" />
+    <ClCompile Include="RRNetworkBehavior.cpp" />
+    <ClCompile Include="RRNetworkView.cpp" />
+    <ClCompile Include="RR_Base.cpp" />
+    <ClCompile Include="RR_Game.cpp" />
+    <ClCompile Include="RR_GameServer.cpp" />
+    <ClCompile Include="RR_Scripting.cpp" />
+    <ClCompile Include="RR_System.cpp" />
+    <ClCompile Include="RR_Unity.cpp" />
+    <ClCompile Include="Runtime.cpp" />
+    <ClCompile Include="ScreenPlayerController.cpp" />
+    <ClCompile Include="Headers_Player.cpp" />
+    <ClCompile Include="SerializedEquipmentSkinId.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="SphereCollider.cpp" />
+    <ClCompile Include="System_Object.cpp" />
+    <ClCompile Include="IL2CPPUtils.cpp" />
+    <ClCompile Include="ConsumableInfo.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Managers_Combat.cpp" />
+    <ClCompile Include="Managers_Movement.cpp" />
+    <ClCompile Include="Managers_Players.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="Movement.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerGameRoleManager.cpp" />
+    <ClCompile Include="PlayerMovement.cpp" />
+    <ClCompile Include="Players.cpp" />
+    <ClCompile Include="Pointers.cpp" />
+    <ClCompile Include="Prefabs.cpp" />
+    <ClCompile Include="RangedWeapon.cpp" />
+    <ClCompile Include="Referee.cpp" />
+    <ClCompile Include="Render.cpp" />
+    <ClCompile Include="Resources.cpp" />
+    <ClCompile Include="Spawnables.cpp" />
+    <ClCompile Include="Texture2D.cpp" />
+    <ClCompile Include="Themes.cpp" />
+    <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Tool.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Type.cpp" />
+    <ClCompile Include="Unity.cpp" />
+    <ClCompile Include="Uri.cpp" />
+    <ClCompile Include="ValueType.cpp" />
+    <ClCompile Include="Vars.cpp" />
+    <ClCompile Include="VisualsVR.cpp" />
+    <ClCompile Include="Windows.cpp" />
+    <ClCompile Include="Windows_Assets.cpp" />
+    <ClCompile Include="Windows_Blacklist.cpp" />
+    <ClCompile Include="Windows_Foodsploit.cpp" />
+    <ClCompile Include="Windows_Lobby.cpp" />
+    <ClCompile Include="Windows_PlayerList.cpp" />
+    <ClCompile Include="Windows_UriLogger.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AimbotUtils.h" />
+    <ClInclude Include="API.h" />
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="AssetBundle.h" />
+    <ClInclude Include="AvatarItemWardrobeRuntimeConfig.h" />
+    <ClInclude Include="Blacklisted.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Cheat.h" />
+    <ClInclude Include="Cheats.h" />
+    <ClInclude Include="CheatUtils.h" />
+    <ClInclude Include="Class.h" />
+    <ClInclude Include="colored_cout.h" />
+    <ClInclude Include="Combat.h" />
+    <ClInclude Include="Combat_Aimbot.h" />
+    <ClInclude Include="Combat_HvH.h" />
+    <ClInclude Include="Combat_SilentAimbot.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="ConsumableCollectionRuntimeConfig.h" />
+    <ClInclude Include="Dependencies\ImGui\backends\imgui_impl_dx11.h" />
+    <ClInclude Include="Dependencies\ImGui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="Dependencies\ImGui\imconfig.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui.h" />
+    <ClInclude Include="Dependencies\ImGui\imgui_internal.h" />
+    <ClInclude Include="Dependencies\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Dependencies\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Dependencies\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Dependencies\json\json.hpp" />
+    <ClInclude Include="Dependencies\kiero\kiero.h" />
+    <ClInclude Include="Dependencies\Memory\Memory.h" />
+    <ClInclude Include="Dependencies\RetSpoofer\RetSpoofer.hpp" />
+    <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="Draw.h" />
+    <ClInclude Include="DrawingSurface.h" />
+    <ClInclude Include="EquipmentInfo.h" />
+    <ClInclude Include="ESP.h" />
+    <ClInclude Include="ExportOffsets.h" />
+    <ClInclude Include="Exports.h" />
+    <ClInclude Include="Field.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Hashtable.h" />
+    <ClInclude Include="Headers.h" />
+    <ClInclude Include="Headers_Aimbot.h" />
+    <ClInclude Include="Headers_API.h" />
+    <ClInclude Include="Headers_Combat.h" />
+    <ClInclude Include="Headers_GUI.h" />
+    <ClInclude Include="Headers_Misc.h" />
+    <ClInclude Include="Headers_Network.h" />
+    <ClInclude Include="Headers_Spawnables.h" />
+    <ClInclude Include="Headers_Unity.h" />
+    <ClInclude Include="Headers_Visuals.h" />
+    <ClInclude Include="Headers_VRVisuals.h" />
+    <ClInclude Include="Il2CppDomain.h" />
+    <ClInclude Include="ImageConversion.h" />
+    <ClInclude Include="LineRenderer.h" />
+    <ClInclude Include="Managers_Network.h" />
+    <ClInclude Include="Managers_Visuals.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Menu_Includes.h" />
+    <ClInclude Include="Mods_Basic.h" />
+    <ClInclude Include="Mods_Game.h" />
+    <ClInclude Include="GameCombatManager.h" />
+    <ClInclude Include="GameOffsets.h" />
+    <ClInclude Include="GameTeamManager.h" />
+    <ClInclude Include="GUI.h" />
+    <ClInclude Include="GUIBase.h" />
+    <ClInclude Include="Helper.h" />
+    <ClInclude Include="Hook.h" />
+    <ClInclude Include="Il2CppArray.h" />
+    <ClInclude Include="Il2CppClass.h" />
+    <ClInclude Include="Il2CppMethod.h" />
+    <ClInclude Include="Il2CppObject.h" />
+    <ClInclude Include="Il2CppType.h" />
+    <ClInclude Include="Managers_PlayerList.h" />
+    <ClInclude Include="Mods_Lobby.h" />
+    <ClInclude Include="PlayerHand.h" />
+    <ClInclude Include="PlayerHead.h" />
+    <ClInclude Include="Mods_RPC.h" />
+    <ClInclude Include="PlayerNameTag.h" />
+    <ClInclude Include="RecRoomSceneManager.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RR.h" />
+    <ClInclude Include="RRNetworking.h" />
+    <ClInclude Include="LocalPlayerController.h" />
+    <ClInclude Include="Managers_Lobby.h" />
+    <ClInclude Include="pDictionary.h" />
+    <ClInclude Include="PlayerAvatar.h" />
+    <ClInclude Include="PointerUtils.h" />
+    <ClInclude Include="RRNetworkBehavior.h" />
+    <ClInclude Include="RRNetworkView.h" />
+    <ClInclude Include="RR_Base.h" />
+    <ClInclude Include="RR_Game.h" />
+    <ClInclude Include="RR_GameServer.h" />
+    <ClInclude Include="RR_Includes.h" />
+    <ClInclude Include="RR_Scripting.h" />
+    <ClInclude Include="RR_System.h" />
+    <ClInclude Include="RR_Unity.h" />
+    <ClInclude Include="Runtime.h" />
+    <ClInclude Include="ScreenPlayerController.h" />
+    <ClInclude Include="Headers_Player.h" />
+    <ClInclude Include="SerializedEquipmentSkinId.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="SphereCollider.h" />
+    <ClInclude Include="System_Object.h" />
+    <ClInclude Include="IL2CPPUtils.h" />
+    <ClInclude Include="ConsumableInfo.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="Managers_Combat.h" />
+    <ClInclude Include="Managers_Movement.h" />
+    <ClInclude Include="Managers_Players.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="Movement.h" />
+    <ClInclude Include="PlayerGameRoleManager.h" />
+    <ClInclude Include="PlayerMovement.h" />
+    <ClInclude Include="PointerIncludes.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="Method.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Includes.h" />
+    <ClInclude Include="Players.h" />
+    <ClInclude Include="Pointers.h" />
+    <ClInclude Include="Prefabs.h" />
+    <ClInclude Include="Quaternion.h" />
+    <ClInclude Include="RangedWeapon.h" />
+    <ClInclude Include="Referee.h" />
+    <ClInclude Include="RefereeOffsets.h" />
+    <ClInclude Include="Render.h" />
+    <ClInclude Include="Resources.h" />
+    <ClInclude Include="Roboto_Regular.h" />
+    <ClInclude Include="Spawnables.h" />
+    <ClInclude Include="String.h" />
+    <ClInclude Include="Texture2D.h" />
+    <ClInclude Include="Themes.h" />
+    <ClInclude Include="Time.h" />
+    <ClInclude Include="Tool.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Type.h" />
+    <ClInclude Include="Unity.h" />
+    <ClInclude Include="Uri.h" />
+    <ClInclude Include="ValueType.h" />
+    <ClInclude Include="Vars.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector4.h" />
+    <ClInclude Include="VisualsVR.h" />
+    <ClInclude Include="Windows.h" />
+    <ClInclude Include="Windows_Assets.h" />
+    <ClInclude Include="Windows_Blacklist.h" />
+    <ClInclude Include="Windows_Foodsploit.h" />
+    <ClInclude Include="Windows_Lobby.h" />
+    <ClInclude Include="Windows_PlayerList.h" />
+    <ClInclude Include="Windows_UriLogger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="Dependencies\RetSpoofer\RetSpoofer.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

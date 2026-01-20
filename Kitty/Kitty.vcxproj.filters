@@ -1,0 +1,1043 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{78729359-d8a4-4745-bb21-5a7a1c0234c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base">
+      <UniqueIdentifier>{666bc615-8aa6-4c40-88b3-271e912694dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies">
+      <UniqueIdentifier>{fb05d14a-092c-4dd8-a455-c1d55168563c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\ImGui">
+      <UniqueIdentifier>{0fdeb9ab-8547-45b9-bbcf-aa4d91a5318e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\ImGui\backends">
+      <UniqueIdentifier>{0b4e13e6-e9ce-4c68-99f5-30ff107d0375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Console">
+      <UniqueIdentifier>{4958ba9f-3167-4ffc-9e52-c223009535f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render">
+      <UniqueIdentifier>{b206028a-0f12-4126-b5e1-21b4c0be0812}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI">
+      <UniqueIdentifier>{f055f89a-d1f6-42c6-83c8-bcec9656de34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\Hook">
+      <UniqueIdentifier>{21677fcc-86f8-4282-ab85-dc9551d600d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI\Base">
+      <UniqueIdentifier>{b96d8a9e-cc5f-432e-bd81-6c0e017d8955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\kiero">
+      <UniqueIdentifier>{be5c19b7-b983-4f37-9d6a-23c0abfc1548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat">
+      <UniqueIdentifier>{d7a08b80-5f05-44b7-bba5-e840ae749fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI\Elements">
+      <UniqueIdentifier>{15f081e2-aa07-44ea-96c6-6505ee0031b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI\Elements\Fonts">
+      <UniqueIdentifier>{ce20b2cc-0a94-4473-972d-d97941258942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI\Elements\Themes">
+      <UniqueIdentifier>{4ce90765-a883-4293-aaeb-b8f9bf6fdc36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\RetSpoofer">
+      <UniqueIdentifier>{1255fa77-560c-41c5-b24a-4bf337151162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\Memory">
+      <UniqueIdentifier>{417fb9ab-a09e-4679-951d-40687fcaebaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats">
+      <UniqueIdentifier>{b24553d3-6dea-4b61-ac89-abc33aabbfdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dependencies\json">
+      <UniqueIdentifier>{d1e5bc0d-086d-4bae-8c30-84ea08fe2b28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes">
+      <UniqueIdentifier>{7cfc2ac5-6153-485f-af27-55813198e235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\Managers">
+      <UniqueIdentifier>{5585ad7b-3d94-459e-91f7-27bfd686ba73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\Globals">
+      <UniqueIdentifier>{29f3e5a2-c004-4aba-80cc-9ee77b2bd296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\Globals\Offsets">
+      <UniqueIdentifier>{ea678d1a-dda5-462c-8764-a1f08eb43dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK">
+      <UniqueIdentifier>{3228386d-81a3-4ec3-af7b-f9fa6b112faf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\IL2CPP">
+      <UniqueIdentifier>{9b5b1ab1-46e3-4126-b2f1-7942bb795a54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\IL2CPP\Backends">
+      <UniqueIdentifier>{9f3457e8-b7b5-4c22-bdd0-412546354714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Structs">
+      <UniqueIdentifier>{e45b1ec6-766a-4dfc-a9fc-67ad9dad9757}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Structs\Mono">
+      <UniqueIdentifier>{d0e33557-cdfe-4b28-a2bc-c6bc507a6af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Structs\Unity">
+      <UniqueIdentifier>{be97a404-c76e-42aa-9111-764c588ee846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager">
+      <UniqueIdentifier>{a89d0bb8-428a-4520-988c-58df8d07a9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager\Pointers">
+      <UniqueIdentifier>{d394f84e-91b1-44c0-a1ca-1b7b75e0451e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game">
+      <UniqueIdentifier>{bc3d9a54-a551-4218-81de-a7f15c5e3ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager\Pointers\Exports">
+      <UniqueIdentifier>{1eb4d959-030d-401c-b382-9d146c19ed3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity">
+      <UniqueIdentifier>{12a3c6b3-cf45-4a2f-b382-d4d1bb698d05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager\Pointers\System">
+      <UniqueIdentifier>{d90c96e6-c382-4421-954c-917b8368f3c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game\Obfuscated">
+      <UniqueIdentifier>{d6306e95-67d3-44e1-86f5-4bf5ea8ca381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\Globals\Lists">
+      <UniqueIdentifier>{88ebf80c-0f65-4d54-8a8d-f6e218473296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Structs\IL2CPP">
+      <UniqueIdentifier>{17f0866e-4747-421f-8086-5d1f6473f208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer">
+      <UniqueIdentifier>{06ee7cf7-a7bc-4a47-9d64-a6bc582e25a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\Draw">
+      <UniqueIdentifier>{4f958261-c023-43ee-aab2-8e04642931f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer\Obfuscated">
+      <UniqueIdentifier>{cfeb63fa-6ae3-4c56-b675-c7ee3d7c2a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\RR">
+      <UniqueIdentifier>{4e49d53e-d767-4184-a346-537fff9b04ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI\Menu">
+      <UniqueIdentifier>{b638e234-2c53-4473-b694-4b14757fbdf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI\Menu\Windows">
+      <UniqueIdentifier>{fe590bd6-a02f-48ee-aca5-6b205a4cfd27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\Pointers Manager\Runtime Pointers">
+      <UniqueIdentifier>{ed9bba53-8b05-4f8e-a34f-e27bf5fae456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI\Menu\Headers">
+      <UniqueIdentifier>{f1a80de3-8c6f-4458-9621-1c7f27fe534e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI\Menu\Headers\Render">
+      <UniqueIdentifier>{3e4d3f43-37b5-4372-a35c-fb8869ca5ba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Includes\SDK\RR\Include">
+      <UniqueIdentifier>{47a8e4c7-c2e4-4208-ada9-cae264329e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats\Included">
+      <UniqueIdentifier>{b2b2d687-4836-43bf-94fa-4b3fffbeef0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats\Included\Aimbot">
+      <UniqueIdentifier>{18b3b57f-fced-41b5-9ea9-6104db24eada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats\Included\Visuals">
+      <UniqueIdentifier>{012bc559-46d5-463b-bc18-be337cdabb05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats\Included\Cheat Managers">
+      <UniqueIdentifier>{8c42ee63-a21d-4ea9-9f76-bfe1d0d2b1d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats\Included\Cheat Managers\Lobby">
+      <UniqueIdentifier>{1a076e23-d3c4-4b15-8579-4506a3abbbe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats\Included\Cheat Managers\Lobby\Mods">
+      <UniqueIdentifier>{adb4ed81-2c80-44d8-905c-67dd17a53184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats\Included\Cheat Managers\PlayerList">
+      <UniqueIdentifier>{efefb4dd-1ccc-48d9-a92f-cca5da61b4f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats\Included\Cheat Managers\PlayerList\Mods">
+      <UniqueIdentifier>{e9747be9-4eee-4014-bcff-c55e144d316d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Cheat\Cheats\Included\Aimbot\Include">
+      <UniqueIdentifier>{d062a9e0-8bbb-45ac-8554-c7bf034f3a2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Console\Include">
+      <UniqueIdentifier>{a537b929-69ac-4ccc-bd13-f417ce26370b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Base\Render\GUI\Menu\Windows\Render">
+      <UniqueIdentifier>{6cbd83de-38e1-4354-9db7-6f8ec79868c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dependencies\ImGui\imgui.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\imgui_demo.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\imgui_draw.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\imgui_tables.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\imgui_widgets.cpp">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\backends\imgui_impl_dx11.cpp">
+      <Filter>Dependencies\ImGui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\ImGui\backends\imgui_impl_win32.cpp">
+      <Filter>Dependencies\ImGui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>src\Base\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>src\Base\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Hook.cpp">
+      <Filter>src\Base\Render\Hook</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>src\Base\Render\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIBase.cpp">
+      <Filter>src\Base\Render\GUI\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\kiero\kiero.cpp">
+      <Filter>Dependencies\kiero</Filter>
+    </ClCompile>
+    <ClCompile Include="Themes.cpp">
+      <Filter>src\Base\Render\GUI\Elements\Themes</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheat.cpp">
+      <Filter>src\Cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="Exports.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Exports</Filter>
+    </ClCompile>
+    <ClCompile Include="Dependencies\Memory\Memory.cpp">
+      <Filter>Dependencies\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Cheats.cpp">
+      <Filter>src\Cheat\Cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw.cpp">
+      <Filter>src\Cheat\Includes\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="AimbotUtils.cpp">
+      <Filter>src\Cheat\Cheats\Included\Aimbot\Include</Filter>
+    </ClCompile>
+    <ClCompile Include="Il2CppClass.cpp">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Il2CppMethod.cpp">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Il2CppObject.cpp">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Il2CppType.cpp">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers_PlayerList.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\PlayerList</Filter>
+    </ClCompile>
+    <ClCompile Include="Mods_RPC.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\PlayerList\Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="Mods_Game.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\PlayerList\Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="Mods_Lobby.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\Lobby\Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="Mods_Basic.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\PlayerList\Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_VRVisuals.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_Visuals.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_Unity.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_Spawnables.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_Player.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_Network.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_Misc.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_Combat.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_API.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_Aimbot.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="Headers_GUI.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Prefabs.cpp">
+      <Filter>src\Cheat\Includes\Globals\Lists</Filter>
+    </ClCompile>
+    <ClCompile Include="Blacklisted.cpp">
+      <Filter>src\Cheat\Includes\Globals\Lists</Filter>
+    </ClCompile>
+    <ClCompile Include="RR_Unity.cpp">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClCompile>
+    <ClCompile Include="RR_System.cpp">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClCompile>
+    <ClCompile Include="RR_Scripting.cpp">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClCompile>
+    <ClCompile Include="RR_GameServer.cpp">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClCompile>
+    <ClCompile Include="RR_Game.cpp">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClCompile>
+    <ClCompile Include="RR_Base.cpp">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClCompile>
+    <ClCompile Include="Players.cpp">
+      <Filter>src\Cheat\Includes\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Vars.cpp">
+      <Filter>src\Cheat\Includes\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="Runtime.cpp">
+      <Filter>src\Cheat\Includes\Globals</Filter>
+    </ClCompile>
+    <ClCompile Include="IL2CPPUtils.cpp">
+      <Filter>src\Cheat\Includes\SDK\IL2CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="CheatUtils.cpp">
+      <Filter>src\Cheat\Includes</Filter>
+    </ClCompile>
+    <ClCompile Include="Referee.cpp">
+      <Filter>src\Cheat</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="SphereCollider.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="LineRenderer.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetBundle.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="Tool.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenPlayerController.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="RangedWeapon.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMovement.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerHead.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerHand.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerGameRoleManager.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerAvatar.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalPlayerController.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTeamManager.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCombatManager.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsumableCollectionRuntimeConfig.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="AvatarItemWardrobeRuntimeConfig.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipmentInfo.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game\Obfuscated</Filter>
+    </ClCompile>
+    <ClCompile Include="ConsumableInfo.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game\Obfuscated</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueType.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Uri.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Type.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System_Object.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Dictionary.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClCompile>
+    <ClCompile Include="RRNetworkView.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer</Filter>
+    </ClCompile>
+    <ClCompile Include="RRNetworkBehavior.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer</Filter>
+    </ClCompile>
+    <ClCompile Include="Hashtable.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer</Filter>
+    </ClCompile>
+    <ClCompile Include="RRNetworking.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer\Obfuscated</Filter>
+    </ClCompile>
+    <ClCompile Include="SerializedEquipmentSkinId.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Runtime Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="PointerUtils.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointers.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualsVR.cpp">
+      <Filter>src\Cheat\Cheats\Included\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="ESP.cpp">
+      <Filter>src\Cheat\Cheats\Included\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Unity.cpp">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawnables.cpp">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="Movement.cpp">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="Misc.cpp">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat.cpp">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="API.cpp">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers_Players.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers_Network.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers_Movement.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers_Combat.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat_SilentAimbot.cpp">
+      <Filter>src\Cheat\Cheats\Included\Aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat_HvH.cpp">
+      <Filter>src\Cheat\Cheats\Included\Aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="Combat_Aimbot.cpp">
+      <Filter>src\Cheat\Cheats\Included\Aimbot</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers_Lobby.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\Lobby</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>src\Base\Console\Include</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows_Foodsploit.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows_Assets.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows_PlayerList.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows_Blacklist.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows_Lobby.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows_UriLogger.cpp">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Il2CppDomain.cpp">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerNameTag.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture2D.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageConversion.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawingSurface.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="RecRoomSceneManager.cpp">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Managers_Visuals.cpp">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\ImGui\imconfig.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imgui.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imgui_internal.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imstb_rectpack.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imstb_textedit.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\imstb_truetype.h">
+      <Filter>Dependencies\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\backends\imgui_impl_dx11.h">
+      <Filter>Dependencies\ImGui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\ImGui\backends\imgui_impl_win32.h">
+      <Filter>Dependencies\ImGui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>src\Base\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>src\Base\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Hook.h">
+      <Filter>src\Base\Render\Hook</Filter>
+    </ClInclude>
+    <ClInclude Include="GUI.h">
+      <Filter>src\Base\Render\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIBase.h">
+      <Filter>src\Base\Render\GUI\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\kiero\kiero.h">
+      <Filter>Dependencies\kiero</Filter>
+    </ClInclude>
+    <ClInclude Include="Roboto_Regular.h">
+      <Filter>src\Base\Render\GUI\Elements\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="Themes.h">
+      <Filter>src\Base\Render\GUI\Elements\Themes</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat.h">
+      <Filter>src\Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="RefereeOffsets.h">
+      <Filter>src\Cheat\Includes\Globals\Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOffsets.h">
+      <Filter>src\Cheat\Includes\Globals\Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportOffsets.h">
+      <Filter>src\Cheat\Includes\Globals\Offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="Exports.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Exports</Filter>
+    </ClInclude>
+    <ClInclude Include="Method.h">
+      <Filter>src\Cheat\Includes\SDK\IL2CPP\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\RetSpoofer\RetSpoofer.hpp">
+      <Filter>Dependencies\RetSpoofer</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\Memory\Memory.h">
+      <Filter>Dependencies\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\Mono</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\Mono</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaternion.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheats.h">
+      <Filter>src\Cheat\Cheats</Filter>
+    </ClInclude>
+    <ClInclude Include="Dependencies\json\json.hpp">
+      <Filter>Dependencies\json</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\Mono</Filter>
+    </ClInclude>
+    <ClInclude Include="Class.h">
+      <Filter>src\Cheat\Includes\SDK\IL2CPP\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="Dictionary.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\Mono</Filter>
+    </ClInclude>
+    <ClInclude Include="Il2CppArray.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw.h">
+      <Filter>src\Cheat\Includes\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="AimbotUtils.h">
+      <Filter>src\Cheat\Cheats\Included\Aimbot\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>src\Cheat\Includes\SDK\IL2CPP\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="Il2CppMethod.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="Il2CppClass.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="Il2CppObject.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="Il2CppType.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers_PlayerList.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\PlayerList</Filter>
+    </ClInclude>
+    <ClInclude Include="Mods_RPC.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\PlayerList\Mods</Filter>
+    </ClInclude>
+    <ClInclude Include="Mods_Game.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\PlayerList\Mods</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Mods_Lobby.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\Lobby\Mods</Filter>
+    </ClInclude>
+    <ClInclude Include="Mods_Basic.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\PlayerList\Mods</Filter>
+    </ClInclude>
+    <ClInclude Include="RR_Includes.h">
+      <Filter>src\Cheat\Includes\SDK\RR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu_Includes.h">
+      <Filter>src\Base\Render\GUI\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_VRVisuals.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_Visuals.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_Unity.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_Spawnables.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_Player.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_Network.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_Misc.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_Combat.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_API.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_Aimbot.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers_GUI.h">
+      <Filter>src\Base\Render\GUI\Menu\Headers\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Prefabs.h">
+      <Filter>src\Cheat\Includes\Globals\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="Blacklisted.h">
+      <Filter>src\Cheat\Includes\Globals\Lists</Filter>
+    </ClInclude>
+    <ClInclude Include="RR_Unity.h">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClInclude>
+    <ClInclude Include="RR_System.h">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClInclude>
+    <ClInclude Include="RR_Scripting.h">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClInclude>
+    <ClInclude Include="RR_GameServer.h">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClInclude>
+    <ClInclude Include="RR_Game.h">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClInclude>
+    <ClInclude Include="RR_Base.h">
+      <Filter>src\Cheat\Includes\SDK\RR</Filter>
+    </ClInclude>
+    <ClInclude Include="RR.h">
+      <Filter>src\Cheat\Includes\SDK\RR\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Players.h">
+      <Filter>src\Cheat\Includes\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Vars.h">
+      <Filter>src\Cheat\Includes\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="Runtime.h">
+      <Filter>src\Cheat\Includes\Globals</Filter>
+    </ClInclude>
+    <ClInclude Include="IL2CPPUtils.h">
+      <Filter>src\Cheat\Includes\SDK\IL2CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="CheatUtils.h">
+      <Filter>src\Cheat\Includes</Filter>
+    </ClInclude>
+    <ClInclude Include="Referee.h">
+      <Filter>src\Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereCollider.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="LineRenderer.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetBundle.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="Tool.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenPlayerController.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="RangedWeapon.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerMovement.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerHead.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerHand.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerGameRoleManager.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerAvatar.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalPlayerController.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTeamManager.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCombatManager.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsumableCollectionRuntimeConfig.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="AvatarItemWardrobeRuntimeConfig.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipmentInfo.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game\Obfuscated</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsumableInfo.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game\Obfuscated</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueType.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Uri.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Type.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="System_Object.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="pDictionary.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="RRNetworkView.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="RRNetworkBehavior.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Hashtable.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer</Filter>
+    </ClInclude>
+    <ClInclude Include="RRNetworking.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\GameServer\Obfuscated</Filter>
+    </ClInclude>
+    <ClInclude Include="SerializedEquipmentSkinId.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Runtime Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="PointerUtils.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Pointers.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="PointerIncludes.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualsVR.h">
+      <Filter>src\Cheat\Cheats\Included\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="ESP.h">
+      <Filter>src\Cheat\Cheats\Included\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Unity.h">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawnables.h">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="Movement.h">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="Misc.h">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat.h">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="API.h">
+      <Filter>src\Cheat\Cheats\Included</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers_Players.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers_Network.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers_Movement.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers_Combat.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat_SilentAimbot.h">
+      <Filter>src\Cheat\Cheats\Included\Aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat_HvH.h">
+      <Filter>src\Cheat\Cheats\Included\Aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="Combat_Aimbot.h">
+      <Filter>src\Cheat\Cheats\Included\Aimbot</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers_Lobby.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers\Lobby</Filter>
+    </ClInclude>
+    <ClInclude Include="colored_cout.h">
+      <Filter>src\Base\Console\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>src\Base\Console\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows_Foodsploit.h">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows.h">
+      <Filter>src\Base\Render\GUI\Menu\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows_Assets.h">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows_PlayerList.h">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows_Blacklist.h">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows_Lobby.h">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows_UriLogger.h">
+      <Filter>src\Base\Render\GUI\Menu\Windows\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Il2CppDomain.h">
+      <Filter>src\Cheat\Includes\SDK\Structs\IL2CPP</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerNameTag.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture2D.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\System</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageConversion.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Unity</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingSurface.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="RecRoomSceneManager.h">
+      <Filter>src\Cheat\Includes\SDK\Pointers Manager\Pointers\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>src\Cheat\Includes\SDK\IL2CPP\Backends</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers_Visuals.h">
+      <Filter>src\Cheat\Cheats\Included\Cheat Managers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="Dependencies\RetSpoofer\RetSpoofer.asm">
+      <Filter>Dependencies\RetSpoofer</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
